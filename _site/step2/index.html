@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Intro to Javascript: Adding some JavaScript</title>
+  <meta name="description" content="There are two different ways to add Javascript to a page. The first way is to put your Javascript inside a &amp;lt;script&amp;gt; tag.">
+  <link rel="icon" type="image/x-icon" href="/express-workshop-2/favicon.ico" />
+  <link rel="stylesheet" href="/js-intro-workshop/assets/main.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="canonical" href="http://localhost:4000/js-intro-workshop/step2/">
+  <link rel="alternate" type="application/rss+xml" title="Coding for Non-Coders" href="/js-intro-workshop/feed.xml">
+
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script>
+  $(document).ready(function(){
+    $('div.solution').each( function(){
+      $(this).prepend('<h5 class="toggle hiding"><i class="fa fa-chevron-up" aria-hidden="true"></i> Click to <span class="action"></span> solution</h5>');
+    });
+    $('div.solution .highlight').first().addClass('hidden');
+    $('h5.toggle').click(function(e){
+      $(this).parent().children('.highlight').first().slideToggle('show');
+      $(this).toggleClass('showing');
+      $(this).toggleClass('hiding');
+      $(this).children('i.fa').toggleClass('fa-chevron-up');
+      $(this).children('i.fa').toggleClass('fa-chevron-down');
+
+    });
+  });
+  </script>
+  
+</head>
+
+
+  <body>
+
+    <header class="site-header" role="banner">
+
+  <div class="wrapper">
+    
+    
+    <a class="site-title" href="/js-intro-workshop/">Coding for Non-Coders <small>Intro to Javascript</small></a>
+
+    
+      <nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+              <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+              <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger">
+          <a class="page-link" href="/js-intro-workshop/">Home</a>
+           <a class="page-link go-link" href="/js-intro-workshop/step0/"><i class="fa fa-rocket" aria-hidden="true"></i> Start</a>
+        </div>
+      </nav>
+    
+  </div>
+</header>
+
+
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        
+
+<div class="step-nav">
+  <ul class="main">
+    <li class=""><a  href="/js-intro-workshop/">Home</a></li>
+  </ul>
+
+  <h3>Part 0 - Jump in &amp; Build</h3>
+  <ul>
+  
+    
+      <li class=''>
+        <a href="/js-intro-workshop/step0/">
+          0 - Tools of the Trade
+        </a>
+      </li>
+      
+  
+    
+      <li class=''>
+        <a href="/js-intro-workshop/step1/">
+          1 - Making a webpage
+        </a>
+      </li>
+      
+  
+    
+      <li class='active'>
+        <a href="/js-intro-workshop/step2/">
+          2 - Adding some JavaScript
+        </a>
+      </li>
+      
+  
+    
+      <li class=''>
+        <a href="/js-intro-workshop/step3/">
+          3 - Congratulations
+        </a>
+      </li>
+      
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  </ul>
+
+  
+  <h3>Part 1 - Foundations</h3>
+  <ul>
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      <li class=''>
+        <a href="/js-intro-workshop/step4/">
+          4 - Variables
+        </a>
+      </li>
+      
+  
+    
+      <li class=''>
+        <a href="/js-intro-workshop/step5/">
+          5 - Operators
+        </a>
+      </li>
+      
+  
+    
+      <li class=''>
+        <a href="/js-intro-workshop/step6/">
+          6 - Functions
+        </a>
+      </li>
+      
+  
+    
+      <li class=''>
+        <a href="/js-intro-workshop/step7/">
+          7 - Conditional Statements
+        </a>
+      </li>
+      
+  
+    
+      <li class=''>
+        <a href="/js-intro-workshop/step8/">
+          8 - Arrays
+        </a>
+      </li>
+      
+  
+    
+      <li class=''>
+        <a href="/js-intro-workshop/step9/">
+          9 - Loops
+        </a>
+      </li>
+      
+  
+    
+      <li class=''>
+        <a href="/js-intro-workshop/step10/">
+          10 - Exercise: FizzBuzz
+        </a>
+      </li>
+      
+  
+    
+      <li class=''>
+        <a href="/js-intro-workshop/step11/">
+          11 - Congratulations
+        </a>
+      </li>
+      
+  
+    
+  
+    
+  
+    
+  
+  </ul>
+
+  <h3>Part 2 - The Browser</h3>
+  <ul>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+      <li class=''>
+        <a href="/js-intro-workshop/step12/">
+          12 - CSS
+        </a>
+      </li>
+      
+  
+  
+      <li class=''>
+        <a href="/js-intro-workshop/step13/">
+          13 - Accessing Elements
+        </a>
+      </li>
+      
+  
+  
+      <li class=''>
+        <a href="/js-intro-workshop/step14/">
+          14 - Congratulations
+        </a>
+      </li>
+      
+  
+  </ul>
+
+  <!-- <h3>Challenges</h3>
+  <ul>
+  
+  </ul> -->
+
+  <ul class="main">
+    <!-- <li class=""><a href="/js-intro-workshop/troubleshooting/">Troubleshooting</a></li> -->
+    <li class=""><a href="/js-intro-workshop/journey-continues/">The Journey Continues</a></li>
+  </ul>
+
+  
+  <h3>Useful Links</h3>
+  <ul>
+  <li><a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference">MDN Javascript Reference</a></li>
+  
+</ul>
+
+
+</div>
+
+        <article class="post">
+
+  <header class="post-header">
+    <h2 class="post-title"> Step 2 - Adding some JavaScript</h1>
+  </header>
+
+  <div class="post-content">
+    <p>There are two different ways to add Javascript to a page. The first way is to put your Javascript inside a <code class="highlighter-rouge">&lt;script&gt;</code> tag.</p>
+
+<h3><i class="fa fa-hand-pointer-o " aria-hidden="true"></i> Javascript in my Head</h3>
+
+<p>Edit <code class="highlighter-rouge">index.html</code> and update the <code class="highlighter-rouge">&lt;head&gt;</code> element to include a new <code class="highlighter-rouge">&lt;script&gt;</code> element like this:</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;head&gt;</span>
+  <span class="c">&lt;!-- Bootstrap template code you pasted earlier --&gt;</span>
+  <span class="nt">&lt;script&gt;</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"OMG this is JavaScript"</span><span class="p">);</span>
+  <span class="nt">&lt;/script&gt;</span>
+<span class="nt">&lt;/head&gt;</span>
+</code></pre></div></div>
+
+<p>Save this, refresh your page and nothing should look different.</p>
+
+<p>But if you open your Dev Tools and look at the Console, you will see the message <code class="highlighter-rouge">OMG this is JavaScript</code>.</p>
+
+<p>When your browser loads a page, it starts at the first tag and works through the whole document displaying it as it goes.  When your browser encounters a <code class="highlighter-rouge">&lt;script&gt;</code> tag, it stops and runs that code before continuing to displaying the rest of the page.</p>
+
+<p>So what does <code class="highlighter-rouge">console.log()</code> do exactly?</p>
+
+<h4 id="consolelog">console.log()</h4>
+
+<p><code class="highlighter-rouge">console.log()</code> tells the browser to display messages and other information in the Dev Tools console.  We call these ‘console’ or ‘log’ messages, and they only appear in the Dev Tools Console. Anyone interacting with your webpage isn’t going to see them unless they open the Dev Tools Console.</p>
+
+<p><code class="highlighter-rouge">console.log()</code> is for you (the developer) to use when <strong>debugging</strong>.  That is when you trying to figure out why something isn’t working as you expected it to.  It’s also common to use it when you are learning a new thing.  You can use <code class="highlighter-rouge">console.log()</code> to display error &amp; status messages or anything else which you think might help you.</p>
+
+<h4 id="alert">alert()</h4>
+
+<p>Enough with the Console for a bit, what about something a user could actually see.</p>
+
+<h3><i class="fa fa-hand-pointer-o " aria-hidden="true"></i> Javascript Alert!</h3>
+
+<p>Edit the page again and replace the <code class="highlighter-rouge">console.log</code> line with:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">alert</span><span class="p">(</span><span class="s1">'Hello there!'</span><span class="p">);</span>
+</code></pre></div></div>
+<p>Save and refresh the page, and a small window will popup in your browser with the text ‘Hello there!’ in it.</p>
+
+<p><img src="../assets/intro-alert.png" alt="You will see this page" class="img-responsive" /></p>
+
+<h4 id="external-javascript-files">External Javascript files.</h4>
+
+<p>We said earlier that there are two ways to bring JavaScript in using a <code class="highlighter-rouge">&lt;script&gt;</code> tag.</p>
+
+<p>The other way is to use <code class="highlighter-rouge">&lt;script&gt;</code> to load JavaScript from another file into this page.</p>
+
+<p>You do this by putting the Javascript in a different file, and then using the <code class="highlighter-rouge">src</code> attribute to specify that file as the script source.</p>
+
+<h3><i class="fa fa-hand-pointer-o " aria-hidden="true"></i> Hook up some Javascript</h3>
+
+<p>Make sure that there is no Javascript in your main HTML page.</p>
+
+<p>Refresh the page and check there is no Javascript alert, and also check the console to make sure there’s no messages 
+there either.  Now we are going to add an alert in our seperate script file.</p>
+
+<p>Open up the file <code class="highlighter-rouge">script.js</code> in your Glitch.  Add the following code:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">alert</span><span class="p">(</span><span class="s1">'Hello there!'</span><span class="p">);</span>
+</code></pre></div></div>
+
+<p>Refresh the page.  Nothing happens!  Its because we don’t have the script file hooked up to our HTML anymore.</p>
+
+<p>When we pasted in the Bootstrap template we over-wrote that.  So add the following lines:</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="c">&lt;!-- import the webpage's javascript file --&gt;</span>
+    <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"/script.js"</span> <span class="na">defer</span><span class="nt">&gt;&lt;/script&gt;</span>
+</code></pre></div></div>
+
+<p>Note the comment line above the HTML code.  We add that to explain to our later selves what this code was doing.</p>
+
+<p>Try refreshing now - you should get your alert.</p>
+
+<h3><i class="fa fa-hand-pointer-o " aria-hidden="true"></i> Hook up some CSS</h3>
+
+<p>While you’re on the job, lets give our page a cool title so it appears in your browser tabs and also connect up the Cascading style sheets that Glitch gave us - we’ll need those too.  Add the following lines.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"style.css"</span> <span class="nt">/&gt;</span>
+
+    <span class="nt">&lt;title&gt;</span>Awesome To Do List<span class="nt">&lt;/title&gt;</span>
+</code></pre></div></div>
+
+<h4 id="hiding-showing-and-modifying-html">Hiding, Showing and Modifying HTML</h4>
+
+<p>Javascript has the power to modify the appearance of our HTML page, live in our browser.  It takes the
+HTML language that we already sent to our browser and using what we call the DOM - a powerful API for
+web programming - it can hide, show and do other things with the elements on the page.</p>
+
+<p>The easiest &amp; most popular way to do that is to employ CSS styles that implement the effects we want, 
+and then use Javascript to turn those off an on.</p>
+
+<p>Let’s hook up some useful CSS that we’ll use for this purpose.  Since we don’t really have time for a lesson 
+on CSS, please look at the other sections of this course which cover it.</p>
+
+<h3><i class="fa fa-hand-pointer-o " aria-hidden="true"></i> CSS Rules for our ToDo App</h3>
+
+<pre><code class="language-CSS">/* Remove margins and padding from the list */
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* Style the list items */
+ul li {
+  cursor: pointer;
+  position: relative;
+  padding: 12px 8px 12px 40px;
+  background: #eee;
+  font-size: 18px;
+  transition: 0.2s;
+
+  /* make the list items unselectable */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Set all odd list items to a different color (zebra-stripes) */
+ul li:nth-child(odd) {
+  background: #f9f9f9;
+}
+
+/* Darker background-color on hover */
+ul li:hover {
+  background: #ddd;
+}
+
+/* When clicked on, add a background color and strike out text */
+ul li.checked {
+  background: #888;
+  color: #fff;
+  text-decoration: line-through;
+}
+
+/* Add a "checked" mark when clicked on */
+ul li.checked::before {
+  content: '';
+  position: absolute;
+  border-color: #fff;
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  top: 10px;
+  left: 16px;
+  transform: rotate(45deg);
+  height: 15px;
+  width: 7px;
+}
+
+/* Style the close button */
+.close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 12px 16px 12px 16px;
+}
+
+.close:hover {
+  background-color: #f44336;
+  color: white;
+}
+
+/* Style the header */
+.header {
+  background-color: #f44336;
+  padding: 30px 40px;
+  color: white;
+  text-align: center;
+}
+
+/* Clear floats after the header */
+.header:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the input */
+input {
+  margin: 0;
+  border: none;
+  border-radius: 0;
+  width: 75%;
+  padding: 10px;
+  float: left;
+  font-size: 16px;
+}
+
+/* Style the "Add" button */
+.addBtn {
+  padding: 10px;
+  width: 25%;
+  background: #d9d9d9;
+  color: #555;
+  float: left;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 0;
+}
+
+.addBtn:hover {
+  background-color: #bbb;
+}
+</code></pre>
+
+<h4 id="querying-and-creating-elements">Querying and Creating Elements</h4>
+
+<p>Javascript can do almost anything to our webpages - but it is blind.  You have to tell it where to do its work.</p>
+
+<h3><i class="fa fa-hand-pointer-o " aria-hidden="true"></i> Instructing Javascript</h3>
+
+<p>Go to the browser tab where you are viewing your HTML page, the one with the To Do app.  Open the Javascript console and type in there the following:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">document</span><span class="p">.</span><span class="nx">getElementsByTagName</span><span class="p">(</span><span class="s2">"LI"</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>When you press enter you should see a list of all of the <code class="highlighter-rouge">LI</code> elements in the page.  Javascript went off and got them via the DOM API and returned them for you.</p>
+
+<p>Now try the following:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">document</span><span class="p">.</span><span class="nx">getElementsByTagName</span><span class="p">(</span><span class="s2">"LI"</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
+</code></pre></div></div>
+
+<p>Experiment with other numbers in there, other than zero.  See what is returned.</p>
+
+<p>Now try this:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">document</span><span class="p">.</span><span class="nx">getElementsByTagName</span><span class="p">(</span><span class="s2">"LI"</span><span class="p">)[</span><span class="mi">0</span><span class="p">].</span><span class="nx">style</span><span class="o">=</span><span class="s2">"color:red"</span>
+</code></pre></div></div>
+
+<h4 id="loops-and-variables">Loops and variables</h4>
+
+<p>Its going to be pretty tedious turning every line red like this.</p>
+
+<p>The workbook you’re going through right now has a number of lessons on how to use variables and loops, and other important programming structures that save us from having to repeat these instructions.</p>
+
+<p>For now follow along as best you can - if it doesn’t work, read that material carefully to find the answers or get help from the mentors.</p>
+
+<p>What we want to do is that when the page loads we iterate through all the to-do items in our list in our HTML
+page and make sure they have a close button on them.  We’re going to dynamically edit the content of our web page
+using Javascript.</p>
+
+<h3><i class="fa fa-hand-pointer-o " aria-hidden="true"></i> Loops in Javascript</h3>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// Create a "close" button and append it to each list item</span>
+<span class="kd">var</span> <span class="nx">nodeList</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementsByTagName</span><span class="p">(</span><span class="s2">"LI"</span><span class="p">);</span>
+<span class="kd">var</span> <span class="nx">i</span><span class="p">;</span>
+<span class="k">for</span> <span class="p">(</span><span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">nodeList</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+  <span class="kd">let</span> <span class="nx">span</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s2">"SPAN"</span><span class="p">);</span>
+  <span class="kd">let</span> <span class="nx">txt</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createTextNode</span><span class="p">(</span><span class="s2">"</span><span class="err">\</span><span class="s2">u00D7"</span><span class="p">);</span>
+  <span class="nx">span</span><span class="p">.</span><span class="nx">className</span> <span class="o">=</span> <span class="s2">"close"</span><span class="p">;</span>
+  <span class="nx">span</span><span class="p">.</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">txt</span><span class="p">);</span>
+  <span class="nx">nodeList</span><span class="p">[</span><span class="nx">i</span><span class="p">].</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">span</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>Notice that when we created that element using the line</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">let</span> <span class="nx">span</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s2">"SPAN"</span><span class="p">);</span>
+</code></pre></div></div>
+
+<p>we then set its class to be the special <code class="highlighter-rouge">close</code> class that is in our CSS for the project.  Open up the CSS file <code class="highlighter-rouge">style.css</code> and find what the definition of <code class="highlighter-rouge">close</code> is.  What do you think it does?</p>
+
+<h4 id="functions">Functions</h4>
+
+<p>Sometimes we want to save out a particularly useful bit of code to use again and again.</p>
+
+<p>Its different from a loop, where we want to run it X amount of times in one spot.  Its more like
+a recipe that we’re wanting to use over and over in different places.  This is what functions are
+for.  Let us make our <em>close</em> button adding code into a function.</p>
+
+<h3><i class="fa fa-hand-pointer-o " aria-hidden="true"></i> Functioning normally!</h3>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">addCloseButton</span><span class="p">(</span><span class="nx">toDoNode</span><span class="p">)</span> <span class="p">{</span>
+  <span class="kd">let</span> <span class="nx">span</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s2">"SPAN"</span><span class="p">);</span>
+  <span class="kd">let</span> <span class="nx">txt</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createTextNode</span><span class="p">(</span><span class="s2">"</span><span class="err">\</span><span class="s2">u00D7"</span><span class="p">);</span>
+  <span class="nx">span</span><span class="p">.</span><span class="nx">className</span> <span class="o">=</span> <span class="s2">"close"</span><span class="p">;</span>
+  <span class="nx">span</span><span class="p">.</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">txt</span><span class="p">);</span>
+  <span class="nx">toDoNode</span><span class="p">.</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">span</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="c1">// Create a "close" button and append it to each list item</span>
+<span class="kd">var</span> <span class="nx">nodelist</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementsByTagName</span><span class="p">(</span><span class="s2">"LI"</span><span class="p">);</span>
+<span class="kd">var</span> <span class="nx">i</span><span class="p">;</span>
+<span class="k">for</span> <span class="p">(</span><span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">nodelist</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">addCloseButton</span><span class="p">(</span><span class="nx">nodelist</span><span class="p">[</span><span class="nx">i</span><span class="p">]);</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h4 id="handlers">Handlers</h4>
+
+<p>OK, we are using code to change the way our pages look - but it still doesn’t respond to our commands when we interact with the page.  To acheive that we need a special type of function: its referred to as a callback or handler.</p>
+
+<p>Remember above when we created an element and then set the <code class="highlighter-rouge">className</code> attribute of it so that it was styled by our CSS from the <code class="highlighter-rouge">styles.css</code> file?</p>
+
+<p>We can also set onto our elements a special <em>function</em>.</p>
+
+<p>Huh?</p>
+
+<p>Yep - in Javascript a function is a thing, just like a style or a piece of text.  And you can set it onto elements.  When we interact with the element that function will be run - we say that the “handler fires”.</p>
+
+<p>Type this code under your other code.</p>
+
+<h3><i class="fa fa-hand-pointer-o " aria-hidden="true"></i> Handle it with Javascript</h3>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// Add a "checked" symbol when clicking on a list item</span>
+<span class="kd">var</span> <span class="nx">list</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s1">'ul'</span><span class="p">);</span>
+<span class="nx">list</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s1">'click'</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">ev</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">if</span> <span class="p">(</span><span class="nx">ev</span><span class="p">.</span><span class="nx">target</span><span class="p">.</span><span class="nx">tagName</span> <span class="o">===</span> <span class="s1">'LI'</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">ev</span><span class="p">.</span><span class="nx">target</span><span class="p">.</span><span class="nx">classList</span><span class="p">.</span><span class="nx">toggle</span><span class="p">(</span><span class="s1">'checked'</span><span class="p">);</span>
+  <span class="p">}</span>
+<span class="p">},</span> <span class="kc">false</span><span class="p">);</span>
+</code></pre></div></div>
+
+<p>Now try clicking on a few list items.  What happens when you click one that was already clicked?  What does the <code class="highlighter-rouge">toggle</code> line of code do?</p>
+
+<h4 id="comments">COMMENTS</h4>
+
+<p>One more thing before we move on, comments.</p>
+
+<p>Comments are a way to mark bits of your code or other text so that a browser will ignore them.</p>
+
+<p>Why would we want to do this?  Why have part of what we write get ignored by the computer?</p>
+
+<p>As a developer you will quickly discover that you spend a lot of time reading other people’s code, either because you want to fix a bug or because you want to learn how they did something.  Sometimes code is clear and simple, but a lot of the time it’s not obvious how it works unless you’re familiar with it.</p>
+
+<p>Comments give developers a way to put explanations, advice, and reminders into their code so that other developers can understand it more easily.  Sometimes files will have a big comment block at the top which outlines the purpose of the file, who wrote it, and a list of when and why changes were made.</p>
+
+<p>Think of comments as being able to stick post-it notes in your code.</p>
+
+<p>In JavaScript there are two sorts of comments: single-line &amp; multi-line.</p>
+
+<p>Single line comments start with <code class="highlighter-rouge">//</code> and continue to the end of the line.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// This is a single-line comment.</span>
+</code></pre></div></div>
+
+<p>You can also put single-line comments on the end of lines too.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">alert</span><span class="p">(</span><span class="s1">'Welcome to NodeGirls'</span><span class="p">);</span>  <span class="c1">// this is a comment on the end of a line.</span>
+</code></pre></div></div>
+
+<p>Multi-line comments start with <code class="highlighter-rouge">/*</code>, end with <code class="highlighter-rouge">*/</code> and can go across multiple lines.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cm">/*
+  Multi-line comments look like this.
+
+  They make it easier to write larger blocks of prose for
+  detailed explanations or other notes without marking each
+  line with a comment.  
+
+  You only need to mark the beginning and the end.
+*/</span>
+</code></pre></div></div>
+
+<p>In case you are wondering, HTML also has comments, but it uses the same symbols regardless of comment length. HTML comments start with <code class="highlighter-rouge">&lt;!--</code> and end with <code class="highlighter-rouge">--&gt;</code>.</p>
+
+<p>Feel free to try those out too if you’re curious.</p>
+
+<p>Then head onto the next step.</p>
+
+    
+
+
+<div class="page-nav">
+  <a class='go-link' href='../step3'>Go to Step 3</a>
+</div>
+
+
+    
+
+
+  </div>
+
+</article>
+
+      </div>
+
+    </main>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <div class="social-media centered">
+        <ul>
+            <li><i class="fa fa-home" aria-hidden="true"></i>&nbsp;&nbsp;<a href="http://smithsoft.com.au/" target="_blank">smithsoft.com.au</a></li>
+            <li><i class="fa fa-paper-plane-o" aria-hidden="true"></i>&nbsp;&nbsp;<a href="mailto:sarah@smithsoft.com.au">sarah@smithsoft.com.au</a></li>
+        </ul>
+        <ul class="main-social-media">
+          <li><i class="fa fa-github-alt" aria-hidden="true"></i>&nbsp;&nbsp;<a href="https://github.com/Smithsoft" target="_blank">github.com/Smithsoft</a></li>
+          <li><i class="fa fa-twitter" aria-hidden="true"></i>&nbsp;&nbsp;<a href="https://twitter.com/sarah_j_smith" target="_blank">twitter.com/sarah_j_smith</a></li>
+        </ul>
+      <ul class="main-social-media">
+        <li><i class="fa fa-facebook" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;<a href="https://www.facebook.com/MusesCodeJS/" target="_blank">www.facebook.com/MusesCodeJS</a></li>
+        <li><i class="fa fa-github-alt" aria-hidden="true"></i>&nbsp;&nbsp;<a href="https://github.com/node-girls-australia" target="_blank">github.com/node-girls-australia</a></li>
+        <li><i class="fa fa-twitter" aria-hidden="true"></i>&nbsp;&nbsp;<a href="https://twitter.com/NodeGirlsBri" target="_blank">twitter.com/NodeGirlsBri</a></li>
+      </ul>
+    </div>
+    <div>
+      Thanks to FontAwesome for some cool CC-by-SA icons used in this site: https://fontawesome.com/license
+    </div>
+
+</footer>
+
+
+  </body>
+
+</html>

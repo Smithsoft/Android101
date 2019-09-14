@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+
+    <title>Hello, world!</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>My To Do List</h1>
+        <div id="myDIV" class="header">
+            <form>
+                <div class="form-group">
+                    <label for="inputToDo">To-do Item</label>
+                    <input type="text" class="form-control" id="inputToDo" aria-describedby="todoHelp" placeholder="Enter to-do item text" />
+                    <small id="todoHelp" class="form-text text-muted">Describe what you want to get done.</small>
+                </div>
+                <button onclick="newElement()" type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+
+        <ul id="myUL" class="list-group">
+            <li class="list-group-item">Hit the gym</li>
+            <li class="list-group-item">Pay bills</li>
+            <li class="list-group-item">Meet George</li>
+            <li class="list-group-item">Buy eggs</li>
+            <li class="list-group-item">Read a book</li>
+            <li class="list-group-item">Organize office</li>
+        </ul>
+
+        <div>Icons made by <a href="https://www.freepik.com/?__hstc=57440181.c183ad8d53e56db578c5b388497c052f.1559369704951.1559369704951.1559369704951.1&__hssc=57440181.1.1559369704951&__hsfp=3808215203" 
+            title="Freepik">Freepik</a> from 
+            <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by 
+            <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
