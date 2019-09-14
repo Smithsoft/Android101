@@ -48,4 +48,4 @@ exclude:
   - Gemfile
   - Gemfile.lock
 
-theme: jekyll-theme-cayman
+theme: jekyll-theme-time-machine
