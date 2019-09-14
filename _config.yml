@@ -13,12 +13,12 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: "Coding for Non-Coders"
-workshopname: "Intro to Javascript"
+title: "Android 101"
+workshopname: "Build an Android App"
 email: sarah@smithsoft.com.au
 description: > # this means to ignore newlines until "baseurl:"
-  This is an introductory workshop for Javascript.
-baseurl: "/js-intro-workshop" # the subpath of your site, e.g. /blog
+  This is an introductory workshop for Android native development.
+baseurl: "/android-101" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings

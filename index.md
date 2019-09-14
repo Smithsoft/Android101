@@ -3,8 +3,7 @@ layout: home
 number: start
 ---
 
-<img src="assets/logo.png">
-{% include icon-twitter.svg %}{% include icon-twitter.svg %}
+{% include Android_robot.html %}
 
 ## What is this?
 
