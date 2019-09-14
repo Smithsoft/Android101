@@ -11,97 +11,65 @@ keywords:
 
 ---
 
-<script>
-console.log('oh hey there!')
-</script>
+Developing for Android can be done with any editor and the Android SDK tools but its much
+easier if you use the IntelliJ based IDEA Editor available for Mac, Windows and Linux
+called "Android Studio".
 
-One of the really nice things about Javascript (and web design in general really) is how little you need to get started.  
+# Android Studio
 
-There are many, many tools that you *can* learn, which can make things easier when you start to build bigger more complex applications - but you don't actually need them.
+On Apple Mac Android Studio comes as a bundle that includes all of the Java and Kotlin 
+development toolchain - compilers and so on - and all of the Android SDK tools plus the
+Android Emulators that will allow you to develop for mobile while on your desktop computer.
 
-The only two things you really need are:
+There is a lot of setup - some of which can be deferred - but its best to get it all done
+up front so you don't break your stride with long downloads while learning.
 
-1. an editor
-2. a web browser and its developer tools.
+These very paint-by-numbers Google Slide sets step through each part of getting the 
+Android Studio set up - latest version as of writing which is 3.5 - follow these
+to avoid gotcha's.  The HAXM installer is one such gotcha - mis-clicking can wind you up
+with a non-installed buggy & slow emulator!
 
-## Your Editor
+The final steps - the preferences and checking your setup is right - are a bit more up to
+your personal preference.  Try it the way shown in the slides first and if you don't like
+it feel free to change it.
 
-The first thing you need is an *editor* to write your Javascript source code in.
+* [Install Android Studio (Google Slides)](https://docs.google.com/presentation/d/1pIusJvFrqHlHTY1xZvTXFwGsQiCJ4WK9kGAfB6MKvhk/edit?usp=sharing) 
 
-However since we don't have time to download and install editor tools in this workshop, you'll start out by 
-using an online code editor & server in one called [Glitch](http://glitch.me){:target="_blank"}.
+* [Configure an AVD (Google Slides)](https://docs.google.com/presentation/d/1dOM_hzxx6tpbmD9wGYUV2TcwtLYwrUnzq0wwSiz3poc/edit?usp=sharing) 
 
-When you get started writing code on your own, you'll want to move to an editor that you download and install on
-your local computer.  Microsoft Word and the like won't work as servers & web-browsers cannot understand the special
-characters that those programs insert into your work.
+* [Configure the SDK (Google Slides)](https://docs.google.com/presentation/d/1ZtP6_BoNDKQrY_JQJFQsxihiqBLWoeazIQJnAQ7Z8_U/edit?usp=sharing)
 
-Luckily there are some great code editors available for free.  If you are just getting started we recommend [Brackets](http://brackets.io/){:target="_blank"}.  Brackets is free, open-source, and available for Windows, macOS, and Linux.  There's also [Visual Studio Code](https://code.visualstudio.com/Download){:target="_blank"} by Microsoft and many others. 
+* [Configure Android Studio Preferences (Google Slides)](https://docs.google.com/presentation/d/1bdHzWc6vzwq4c8cvhzJk2RX__YqJ7GI23MKpFf2zP7k/edit?usp=sharing)
 
+# Terminal
 
-## WebBrowser Developer Tools
+If you have never used the terminal its strongly encouraged to get it set up now so that
+you can use if needed.  Make sure its in your task bar, and practice navigating to it
+with your short-cut keys.
 
-Since you're viewing this webpage, we are going to assume you already have a web browser.  :smile:
+In Android there's often times when you need to do things with Gradle (Android's dependency
+manager) that cannot be done from inside the IDE.
 
-All of the modern mainstream web browsers (Chrome, Firefox, Safari, Internet Explorer, Edge) include their own set of Developer Tools AKA Dev Tools.  
+The standard Mac terminal is fine, or you can setup your own.
 
-Dev Tools provide you a way to see what is going on behind the scenes in whatever web page you currently have open in the browser.
+# Bookmarks
 
-Browser Dev Tools are useful for:
+As you develop for Android you'll acquire a huge list of reference bookmarks - its good
+to start now by adding these go-to references to your bookmarks bar on your favourite
+browser.  Build on these as you go through the course.
 
-1. Trying to figure out why your page isn't doing the thing you expect it to do (AKA debugging)
-2. Checking out the code that makes up other people's web pages to learn how they did a particular thing.
+* [Android Developer Codelabs](https://developer.android.com/courses/fundamentals-training/toc-v2)
 
-Different browsers generally cover the same basic functionality with their Dev Tools, but they each do it in their own way with slightly different interfaces and with some features unique to themselves.  
+* Guide to app architecture  |  Android Developers
 
-#### Opening Dev Tools
+Google Play Console
 
-Depending on your browser of choice, the way to open the Dev Tools will be a little different.  But there will generally be a menu item somewhere in addition to keyboard shortcuts.  
+Android Open Source Project
 
-The Dev Tools open in a new panel that is attached ("docked") to your current browser tab.  This panel will usually have a set of tabs for different features and a couple of controls for closing it, switching between being docked horizontally or vertically, and detaching into a completely separate window.
+A guide to the Google Play Console - Google Play Apps & Games - Medium
 
-##### Chrome
+Build your first app  |  Android Developers
 
-Click on the Menu icon, select More Tools, and then Developer Tools.  Or press `ctrl-shift-i`.
+Android Studio Keyboard Shortcuts
 
-##### Firefox
-
-Click on the Menu icon, select Web Developer, and then Toggle Tools.  Or press `ctrl-shift-i`.
-
-##### Safari
-
-Safari's Dev Tools are disabled by default. To enable them go to Safari's Preferences and enable it on the Advanced tab.
-
-Then you will be able to access the Dev Tools using the Develop menu.
-
-##### Internet Explorer & Microsoft Edge
-
-Press the `F12` button on your keyboard while you are in Internet Explorer or Microsoft Edge. This might not work if your F keys are bound to other functions like volume or media control - in this case, you need to press `fn-F12`.
-
-If you are feeling a little overwhelmed by the Dev Tools, don't worry.  We are only really going to use one Dev Tools feature today: the console.  
-
-The console is used to display messages, including errors.  When debugging you will frequently make use of the console to display information to help you.
-
-<h3><i class="fa fa-hand-pointer-o " aria-hidden="true"></i> Your first practical exercise!</h3>
-
-Open your Dev Tools on this page (the one you're reading right now), and go to the Console tab.  
-
-You should see the message `oh hey there!` which is from a little bit of JavaScript in this page, which looks 
-like this: 
-
-<tt>console.log('oh hey there!')</tt>
-
-You can also run JavaScript commands by typing them directly into the console.
-
-Type the following into the console and press enter to see a lovely (or not) shade of green.
-
-```JavaScript
-document.body.style["background-color"] = '#86ff4a'
-```
-
-Neat.
-
-Now refresh the page and you will see the original page again.
-
-What you did with that command was modify the copy of the webpage that your browser had.  Refreshing the page causes the browser to get a fresh new copy of it.
-
-Important to note that any changes made to a page in the Dev Tools exist in that tab in the browser.  They will not be saved back to the original.
+Some useful URL's are also in the footer of the pages on this site.
