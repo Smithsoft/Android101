@@ -18,7 +18,7 @@ workshopname: "Build an Android App"
 email: sarah@smithsoft.com.au
 description: > # this means to ignore newlines until "baseurl:"
   This is an introductory workshop for Android native development.
-baseurl: "/android-101" # the subpath of your site, e.g. /blog
+baseurl: "/Android101" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
@@ -48,4 +48,4 @@ exclude:
   - Gemfile
   - Gemfile.lock
 
-theme: jekyll-theme-time-machine
+theme: jekyll-theme-cayman
