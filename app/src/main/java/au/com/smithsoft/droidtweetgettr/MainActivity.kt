@@ -1,19 +1,26 @@
 package au.com.smithsoft.droidtweetgettr
 
 import android.os.Bundle
-import com.google.android.material.snackbar.Snackbar
-import androidx.appcompat.app.AppCompatActivity
 import android.view.Menu
 import android.view.MenuItem
-
+import androidx.appcompat.app.AppCompatActivity
+import com.google.android.material.snackbar.Snackbar
 import kotlinx.android.synthetic.main.activity_main.*
+import java.util.*
+
 
 class MainActivity : AppCompatActivity() {
+
+    private val wordList = LinkedList<String>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         setSupportActionBar(toolbar)
+
+        for (i in 0..19) {
+            wordList.addLast("Word $i")
+        }
 
         fab.setOnClickListener { view ->
             Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
