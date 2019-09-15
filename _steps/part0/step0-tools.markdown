@@ -33,13 +33,13 @@ The final steps - the preferences and checking your setup is right - are a bit m
 your personal preference.  Try it the way shown in the slides first and if you don't like
 it feel free to change it.
 
-* [Install Android Studio (Google Slides)](https://docs.google.com/presentation/d/1pIusJvFrqHlHTY1xZvTXFwGsQiCJ4WK9kGAfB6MKvhk/edit?usp=sharing) 
+* [Install Android Studio (Google Slides)](https://docs.google.com/presentation/d/1pIusJvFrqHlHTY1xZvTXFwGsQiCJ4WK9kGAfB6MKvhk/edit?usp=sharing){:target="_blank"}
 
-* [Configure an AVD (Google Slides)](https://docs.google.com/presentation/d/1dOM_hzxx6tpbmD9wGYUV2TcwtLYwrUnzq0wwSiz3poc/edit?usp=sharing) 
+* [Configure an AVD (Google Slides)](https://docs.google.com/presentation/d/1dOM_hzxx6tpbmD9wGYUV2TcwtLYwrUnzq0wwSiz3poc/edit?usp=sharing){:target="_blank"}
 
-* [Configure the SDK (Google Slides)](https://docs.google.com/presentation/d/1ZtP6_BoNDKQrY_JQJFQsxihiqBLWoeazIQJnAQ7Z8_U/edit?usp=sharing)
+* [Configure the SDK (Google Slides)](https://docs.google.com/presentation/d/1ZtP6_BoNDKQrY_JQJFQsxihiqBLWoeazIQJnAQ7Z8_U/edit?usp=sharing){:target="_blank"}
 
-* [Configure Android Studio Preferences (Google Slides)](https://docs.google.com/presentation/d/1bdHzWc6vzwq4c8cvhzJk2RX__YqJ7GI23MKpFf2zP7k/edit?usp=sharing)
+* [Configure Android Studio Preferences (Google Slides)](https://docs.google.com/presentation/d/1bdHzWc6vzwq4c8cvhzJk2RX__YqJ7GI23MKpFf2zP7k/edit?usp=sharing){:target="_blank"}
 
 # Terminal
 
@@ -47,8 +47,12 @@ If you have never used the terminal its strongly encouraged to get it set up now
 you can use if needed.  Make sure its in your task bar, and practice navigating to it
 with your short-cut keys.
 
+Android includes a [list of critical command line tools](https://developer.android.com/studio/command-line) most of which can also be used from the IDE, but often when searching
+for solutions online you'll find the only answers involve using the command line.
+
 In Android there's often times when you need to do things with Gradle (Android's dependency
-manager) that cannot be done from inside the IDE.
+manager) that cannot be done from inside the IDE.  Also many useful commands involve 
+running Android's "adb" tool for managing devices connected during development.
 
 The standard Mac terminal is fine, or you can setup your own.
 
@@ -58,18 +62,11 @@ As you develop for Android you'll acquire a huge list of reference bookmarks - i
 to start now by adding these go-to references to your bookmarks bar on your favourite
 browser.  Build on these as you go through the course.
 
-* [Android Developer Codelabs](https://developer.android.com/courses/fundamentals-training/toc-v2)
-
-* Guide to app architecture  |  Android Developers
-
-Google Play Console
-
-Android Open Source Project
-
-A guide to the Google Play Console - Google Play Apps & Games - Medium
-
-Build your first app  |  Android Developers
-
-Android Studio Keyboard Shortcuts
+* [Google Kotlin Codelabs](https://codelabs.developers.google.com/?cat=Kotlin){:target="_blank"}
+* [Google Kotlin RecyclerView CodeLab](https://codelabs.developers.google.com/codelabs/kotlin-android-training-recyclerview-fundamentals/#0){:target="_blank"}
+* [Android Guide to App Architecture](https://developer.android.com/jetpack/docs/guide){:target="_blank"}
+* [Google Play Console](https://play.google.com/apps/publish/){:target="_blank"}
+* [Android Open Source Project](https://source.android.com){:target="_blank"}
+* [Android Studio Keyboard Shortcuts](https://developer.android.com/studio/intro/keyboard-shortcuts){:target="_blank"}
 
 Some useful URL's are also in the footer of the pages on this site.
