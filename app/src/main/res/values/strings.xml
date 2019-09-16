@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">DroidTweetGettr</string>
     <string name="action_settings">Settings</string>
+    <string name="tweet_title">Tweet title</string>
+    <string name="author_image">Author Image</string>
+    <string name="tweet_content">This tweet content does go on a bit.  #FirstWorldProblems</string>
 </resources>
