@@ -38,5 +38,7 @@ This workshop format was originally developed by folks from [Muses JS](musescode
 
 The content of this is OpenSource and utilises Open Source resources published by Google but also by folks not sponsored by corporates who have released their work under Open Sourced licenses.  Their hard work is appreciated.
 
-This workshop was developed by [Sarah Smith](http://github.com/sarah-j-smith) of [Smithsoft](https://github.com/Smithsoft/) for the "Android 101" first devivered at Expedia in 2019.  It
+This workshop was developed by [Sarah Smith](http://github.com/sarah-j-smith) for the "Android 101" first devivered at Expedia in 2019.  It
 is available under the [Apache 2.0 License](https://github.com/Smithsoft/Android101/blob/master/LICENSE){:target="_blank"}.
+
+The Android robot is reproduced or modified from work created and [shared by Google](  https://developer.android.com/distribute/marketing-tools/brand-guidelines.html) and used according to terms described in the [Creative Commons 3.0 Attribution License](  https://developer.android.com/distribute/marketing-tools/brand-guidelines.html).

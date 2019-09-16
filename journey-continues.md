@@ -4,43 +4,38 @@ title: The Journey Continues ...
 permalink: journey-continues/
 ---
 
-So hopefully you have completed the workshop and tried the tasks.  
+Wow that was a ride!  Hopefully you had fun getting to grips with Kotlin,
+Android and mobile development.
 
-But this is just the tip of the iceberg for JavaScript and web development.  There is a whole bunch of technologies and tutorials at your fingertips.  Here are some starting points about where you could go next.  
+The good thing about Android is it has a vibrant (and opinionated) developer
+community and there's a lot of fantastic resources out there.
 
-## JavaScript Sources
+Try the following to see which ones work for you - everyone's learning style
+is different.
+
+## Kotlin & Android Sources
 
 ### Beginner
-* [W3 School JavaScript](https://www.w3schools.com/js/)
-* [scotch.io](https://scotch.io/search?q=javascript)
-* [javascript.info](https://javascript.info/)
+* Try your snippets in this online REPL [Kotlin Playground](https://play.kotlinlang.org/)
+* [Kotlin Reference](https://kotlinlang.org/docs/reference/android-overview.html)
 
 ### Intermediate
-* [The Good Parts of JavaScript](https://www.amazon.com/JavaScript-Good-Parts-Douglas-Crockford/dp/0596517742)
-* [JavaScript:Understanding the weird Parts](https://www.udemy.com/understand-javascript/)
-* [You Don't Know JavaScript](https://github.com/getify/You-Dont-Know-JS)
+* O'Reilly Video [Introduction to Kotlin Programming](http://shop.oreilly.com/product/0636920052982.do) 
 
 ### Advanced
 
- * [Wes Bos 30 Day Challenge](https://javascript30.com/)
+ * [Kotlin Delegation](https://proandroiddev.com/the-magic-in-kotlin-delegates-377d27a7b531)
 
 
-## Javascript & Technology Podcasts
+## Android Podcasts
 
-[The Women in Tech Show](https://thewomenintechshow.com/) weekly technical interviews with prominent women in tech.
+[Android Central](https://podcasts.apple.com/au/podcast/android-central-podcast/id359703665).
 
-[Javascript Jabber](https://devchat.tv/js-jabber) is a weekly discussion about JavaScript, front-end development, community, careers, and frameworks.
+[Fragmented](https://fragmentedpodcast.com).
 
-[FreeCodeAcademy Youtube Channel](https://www.youtube.com/channel/UC8butISFwT-Wl7EV0hUK0BQ) 
+## Android Blogs
 
-[Code Newby](https://www.codenewbie.org/podcast/) weekly podcasts that poeple tell their stories about their coding journeys.
+* [Android Developers Blog](https://android-developers.googleblog.com/2019/05/google-io-2019-empowering-developers-to-build-experiences-on-Android-Play.html)
 
-[WesBos](https://www.youtube.com/channel/UCoebwHSTvwalADTJhps0emA) is a YouTube channel with a variety of short videos mostly on web development and Javascript.
-
-[Fun Fun Function](https://www.youtube.com/channel/UCO1cgjhGzsSYb1rsB4bFe4Q/videos) is a Youtube channel with short videos on a wide variety of programming topics. It has a quirky sense of humour that isn’t for everyone.  His approach is very much a “this seems dumb, let me figure out for you why it isn’t”.
-
-[Greater than Code](http://www.greaterthancode.com/) is a podcast that discusses people issues related to software development.
-
-[Toolsday](http://toolsday.io/) is a short weekly podcast about different software development tools.  Mostly related to web development.
-
+* [Pro Android Dev](https://proandroiddev.com)
 
