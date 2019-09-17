@@ -44,6 +44,7 @@ Here's the steps we'll follow for our project:
 
 * 1. Build the UI
     * An `Activity` will host a `Fragment`
+        * [Codelab on Fragments](https://codelabs.developers.google.com/codelabs/kotlin-android-training-create-and-add-fragment/index.html?index=..%2F..android-kotlin-fundamentals#3)
     * That in turn will have a `RecyclerView` listing the tweets
     * At first we'll have dummy data
     * The dummy data will be hosted ina `ViewModel`
