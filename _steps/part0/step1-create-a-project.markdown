@@ -121,7 +121,7 @@ and then select different sources & items in the project to see:
 
 <div style="width:100%;height:0;padding-bottom:71%;position:relative;"><iframe src="https://giphy.com/embed/UvK7ugxCu1k0Wcl4lw" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p><a href="https://giphy.com/gifs/android-UvK7ugxCu1k0Wcl4lw">via GIPHY</a></p>
 
-# Run your Project
+## Run your Project
 
 If you've completed the previous steps to create an AVD then your device will be displayed
 in the drop-down above.  Select it and then click the green "play" button to run your
@@ -132,8 +132,25 @@ new project:
 The AVD should launch and show the AVD.  Try resizing the AVD window & explore
 the soft control buttons and settings.
 
+### Emulator and IDE
+
+Now you have the project running try using the AVD.  Check out its browser and also
+the Android settings app.
+
 ![Click Create Project](../assets/proj005.png)
 
+# Command Line
 
+After you have run the project, your command line tools should be available.  This is
+what you set up in the [section on the Terminal](https://smithsoft.github.io/Android101/step0/).
+
+Make sure you only have the one AVD (emulator) running, and do not have a development phone
+plugged into your laptop, then run the following:
+
+```
+adb shell am start -a android.intent.action.VIEW -d http://www.stackoverflow.com
+```
+
+This will cause the emulator to fire up Chrome and browse to Stack Overflow!
 
 ---
