@@ -24,12 +24,12 @@ device.
 
 Follow this walk-through to get the paint-by-numbers version of how to create the project.
 
-![Click Create Project](../assets/proj001.png)
+![Click Create Project](../assets/proj001.png){:class="img-responsive"}
 
 We'll use an empty activity for this.  It just shows a basic nav bar & an empty activity
 with a label saying "Hello World".
 
-![Click Create Project](../assets/proj002.png)
+![Click Create Project](../assets/proj002.png){:class="img-responsive"}
 
 There's some points to note on this project configuration screen.  Usually you want some
 care for what user visible name you type in the first box: it will appear on the phone's
@@ -52,7 +52,7 @@ Usually it has to be unique - eg a reverse FQDN.  For now just type something.
 
 Make sure you set the language to Kotlin as that's what we'll be using in this course.
 
-![Click Create Project](../assets/proj003.png)
+![Click Create Project](../assets/proj003.png){:class="img-responsive"}
 
 ## Android Fragmentation
 
@@ -80,7 +80,7 @@ now see comes from Anroid's dependency management & build system _Gradle_ which 
 all the gradle configuration, fetches needed files, compiles dependencies and indexes all
 the source code so it can display the syntax highlighted, parsed version of the app to you.
 
-![Click Create Project](../assets/proj004.png)
+![Click Create Project](../assets/proj004.png){:class="img-responsive"}
 
 You can see this processing occurring in the progress bar at the bottom of the page.
 You can click on that bar and stop the processes if you want, but gradle will complain.
@@ -127,7 +127,7 @@ If you've completed the previous steps to create an AVD then your device will be
 in the drop-down above.  Select it and then click the green "play" button to run your
 new project:
 
-![Android Studio installed](../assets/proj006.png){:class="img-responsive"}
+![Click Create Project](../assets/proj005.png){:class="img-responsive"}
 
 The AVD should launch and show the AVD.  Try resizing the AVD window & explore
 the soft control buttons and settings.
@@ -137,7 +137,7 @@ the soft control buttons and settings.
 Now you have the project running try using the AVD.  Check out its browser and also
 the Android settings app.
 
-![Click Create Project](../assets/proj005.png)
+![Android Studio installed](../assets/proj006.png){:class="img-responsive"}
 
 # Command Line
 

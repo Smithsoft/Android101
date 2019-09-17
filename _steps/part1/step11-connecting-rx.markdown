@@ -6,7 +6,6 @@ title: Connecting Rx
 permalink: step11/
 ---
 
-Wow!  You now know a whole bunch of JavaScript. 
+## TODO
 
-![Congratulations](../assets/minions-congrats.gif){:class="img-responsive"}
-
+COMING SOON

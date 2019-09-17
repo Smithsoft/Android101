@@ -2,7 +2,7 @@
 layout: step
 number: 14
 part: 2
-title: Wiring up Room
+title: Finishing Up
 permalink: step14/
 end: true
 ---
@@ -10,6 +10,7 @@ end: true
 ![Congratulations](../assets/leo-congrats.gif){:class="img-responsive"}
 
 Congratulations
+
 You made it! You’re awesome!
 
 You might want to go strut about the room a bit at this point and get some high fives.

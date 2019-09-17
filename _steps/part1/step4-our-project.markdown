@@ -11,93 +11,62 @@ permalink: step4/
 
 ---
 
-Get services from the internet with Retrofit
+OK - time to get our hands dirty with a real project!
 
-https://codelabs.developers.google.com/codelabs/kotlin-android-training-internet-data/index.html?index=..%2F..android-kotlin-fundamentals#3
+We'll be building a super-basic Twitter client that just fetches one author's tweets from the Twitter API.
 
-Most of the code you write will be manipulating or examining data of some sort. That data might come from a file, or from a 3rd party service, or from the user selecting something on a page or typing into a text box.  Regardless of where it comes from we need a place to put it so we can refer to it. 
+![GretaThunberg tweets](../assets/greta-thunberg-tweets.png){:class="img-responsive"}
 
-**Variables** are the place where we keep information in our program.
+## AndroidTweetGettr
 
-Think of variables are being little boxes.  Each variable has a unique name that you specify and it holds one distinct piece of information (AKA the variable's **value**).
+This programming assignment will go in 3 stages: if you don't get through them all in the face-to-face part of the course please continue in your own time.  We'll break them down so
+you can have a running app as we move forward.
 
-## Creating Variables
+The app is called:
 
-To create a variable you use the keyword `var`:
+* **AndroidTweetGettr**
 
-```javascript
-var greeting;
-```
+Your new client wants an app that just fetches tweets when ever they run it from their favourite tweeter, [@GretaThunberg](https://twitter.com/GretaThunberg).
 
-So, we created a variable named `greeting`, but it has no value inside.  It is empty. To give our variable a value 
-using `=` sign:
+The app will have your clients Twitter API key pasted into it for the MVP version, later you can have this configurable.
 
-```javascript
-greeting = 'Hello everyone!';
-```
+The app is based on a [Swift project called SwiftTweetGettr](https://github.com/sarah-j-smith/SwiftTweetGettr) which has been [ported into C++](https://github.com/sarah-j-smith/QTweetGettr) and other languages as well.  The project handily lays out the service API calls you'll need to make.
 
-This is called **assigning a value** to the variable.  The `=` is called the **assignment** operator.  We'll learn more about operators in the next part.  
+* [QTweetGettr / twitterclient.cpp](https://github.com/sarah-j-smith/QTweetGettr/blob/master/twitterclient.cpp)
 
-We also can create and give value to a variable in one step, as follows:
+We'll be using [Retrofit](https://codelabs.developers.google.com/codelabs/kotlin-android-training-internet-data/index.html?index=..%2F..android-kotlin-fundamentals#3) to handle the API calls.
 
-```javascript
-var whatTheFoxSays = 'yow-wow-wow-wow';
-```
+## App Design
 
-## Using Variables
+![App design](../assets/tweet-getter.png){:class="img-responsive"}
 
-So now we can create variables and can assign values to them.  So what can we do with them?  
+Here's the steps we'll follow for our project:
 
-We can use a variable in anyplace where we could use a value, like in `alert()` & `console.log()` for example.  
+* 1. Build the UI
+    * An `Activity` will host a `Fragment`
+    * That in turn will have a `RecyclerView` listing the tweets
+    * At first we'll have dummy data
+    * The dummy data will be hosted ina `ViewModel`
+    * It will be a `LiveData<List<TweetItem>>`
 
-```javascript
-var greeting = 'Hello everyone!';
-alert(greeting);
-```
+* 2. Create the Twitter data source
+    * We'll create a `Retrofit` service to fetch
+        * the API token 
+        * and data
+    * We'll hook up to a `TweetRepository`
+        * This will have a `getTweets` method
+        * The `getTweets` will return a single which...
+        * ...will push data into the view models livedata
+    * Twitter [images will be fetched](https://codelabs.developers.google.com/codelabs/kotlin-android-training-internet-images/index.html?index=..%2F..android-kotlin-fundamentals#0)
+        * using the getImage method from SwiftTweetGettr.
 
-And since you can use a variable anyplace you can use a value, you can of course use variables to assign values too:
+* 3. Cache the data into a `Room` database
+    * When the app loads it can fetch Greta tweets from an on device store
+    * No more being starved of Greta tweets when network is unavailable
+    * If network is available we'll fetch updated tweets and store them
 
-```javascript
-var whatTheFoxSays = 'yow-wow-wow-wow';
-var mysterySound = whatTheFoxSays;
-```
+## References
 
-What do you think the value of `mysterySound` is here?  Try it out and display it with `console.log()` or `alert()`.
-
-### Tasks
-1. Create two empty variables named `animalName` and `animalNoise`
-2. Assign them appropriate values.
-3. Display them each using `alert()`
-
-
-## Data Types and Strings
-
-You might notice that all the values we are used so far have quote characters (`'`) around them.  Why is that?
-
-Values have a quality what we refer to as **type**. Type indicates what kind of value it is.  Different types have slightly different behaviour and can be used in different ways. 
-
-Putting single or double quotes around a value indicates that has the type of **string**, or "a string of characters".  We use strings for literal representations of words.
-
-So what will happen if you don't put the quotes in?  Like this example?
-
-```javascript
-var message = Hello;
-console.log(message);
-```
-
-You'll get a error something like `ReferenceError: Hello is not defined` because JavaScript assumes that `Hello` is a variable and tries to assigns it's value to `message`.  And `Hello` doesn't exist, so `not defined`.
-
-**Should I use single or double quotes?**  It mostly doesn't matter so long as you use the same ones at the beginning and the end.  It's mostly personal preference but it does matter when the string itself contains quote characters.
-
-```javascript
-var message = 'Say "Hello" to my little friend.';
-var warning = "Don't swim here.  There are sharks!";
-```
-
-What do you think happens if the first string was wrapped in double-quotes, or if the second was in single quotes?
-
-Try it out and see.
-
-In the next step when we talk about operators we will also talk about another data type: Numbers.
-
-
+* [Image fetching codelab](https://codelabs.developers.google.com/codelabs/kotlin-android-training-internet-images/index.html?index=..%2F..android-kotlin-fundamentals#0)
+* [Retrofit](https://codelabs.developers.google.com/codelabs/kotlin-android-training-internet-data/index.html?index=..%2F..android-kotlin-fundamentals#3)
+* [QTweetGettr / twitterclient.cpp](https://github.com/sarah-j-smith/QTweetGettr/blob/master/twitterclient.cpp)
